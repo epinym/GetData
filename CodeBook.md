@@ -14,21 +14,22 @@ Here are the data for the project:
 
 https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip 
 
-### Steps to obtain the data (R code)
+# Steps to obtain the data (R code)
         urlSource = "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
         fileDest="Dataset.zip"
         download.file(urlSource,destfile=fileDest,method="curl")
 
-### Steps to extract the data (R code) 
+# Steps to extract the data (R code) 
 The following command is system dependent, but should work on most *nix systems. This shell command extracts the data to a new directory 'UCI HAR Dataset'
 
         system("unzip Dataset.zip")
 
-### Input files
+# Input files
 The data scientists have already pre-processed the raw sensor data into a more usable format. When they did this they created a trianing dataset and a test dataset. We wish to merge these. The files are:
 
 * ./UCI HAR Dataset/test/X_test.txt
 * ./UCI HAR Dataset/train/X_train.txt
+
 
 
 
